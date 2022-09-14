@@ -317,7 +317,143 @@
     line-height: 23px;
   }
 } 
-  
+   
+ 
+ 
+.courses{ 
+  background-color: #ECF4FF; 
+  text-align: center; 
+  &__title{ 
+    margin: 57px 0 19px; 
+    @extend  %dmsans-700;  
+    font-size: 48px;
+    color: $main-title-link;
+  } 
+   
+  &__subtitle{ 
+    font-size: 17px; 
+     max-width: 674px; 
+     margin: 0 auto 47px;
+  }  
+   
+  &__options{ 
+    border: 1px solid transparent;  
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 25px; 
+    grid-row-gap: 30px; 
+    margin: 0 auto 47px;
+  } 
+   
+  &__option{ 
+    width: 368px; 
+    height: 483px;  
+    padding: 25px;  
+    background-color: $white;
+    border: 1px solid transparent;  
+    border-radius: 7px;
+  }   
+   
+  &__option-img{ 
+    margin-bottom: 25px;
+  }
+   
+  &__option-info{ 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    padding: 0 15px 0 3px;
+    border: 1px solid transparent;   
+    position: relative;
+    margin-bottom: 25px;
+  } 
+    
+  &__option-students, 
+  &__option-views, 
+  &__option-rating{ 
+    font-size: 17px;  
+    position: relative;
+   &::before{ 
+    content: ''; 
+    width: 32px; 
+    height: 32px;    
+    border-radius: 50%;
+    background-image: url('../images/options/option-user.svg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    position: absolute;
+    top: -3px;
+    left: -35px; 
+   } 
+  } 
+   
+  &__option-views::before{  
+    background-image: url('../images/options/option-views.svg'); 
+    top: -3px;
+    left: -35px; 
+   }  
+    
+   &__option-rating::before{  
+    background-image: url('../images/options/option-rating.svg'); 
+    top: -3px;
+    left: -35px; 
+   } 
+    
+   &__option-author{ 
+    position: absolute; 
+    top: -3px;
+    right: 0px;
+   }
+
+  &__option-title-price{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    padding-top: 20px; 
+    margin-bottom: 18px;
+    border-top: 1px solid #E9E8E8;  
+  } 
+   
+  &__option-title{ 
+    @extend  %dmsans-700; 
+    font-size: 24px; 
+    color: $main-title-link;
+  } 
+   
+  &__option-price{   
+    @extend  %dmsans-700; 
+    font-size: 24px; 
+    color: $main-blue-color;
+  }
+ 
+  &__option-text{ 
+    text-align: left; 
+    font-size: 14px; 
+    line-height: 23px;
+  }
+ 
+  &__btn{ 
+    padding: 16px 32px;  
+    font-size: 16px;
+    color: $white; 
+    background-color: $main-blue-color; 
+    border-radius: 7px;  
+    display: inline-block; 
+    border: 3px solid transparent; 
+    transition: all .3s;  
+    margin-bottom: 61px;
+     
+    &:hover{ 
+      border: 3px solid $main-blue-color;   
+      color: $main-blue-color;    
+      background-color: $white; 
+      background-color: #ecf4ff;   
+    }
+  } 
+
+}
  
    
 
