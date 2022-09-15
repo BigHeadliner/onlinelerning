@@ -455,7 +455,107 @@
 
 }
  
+.mentor{  
+  text-align: center; 
+ // background-color: #EFEFEF;
+  &__inner{ 
+    padding-top: 127px;
+  }   
    
+  &__title{ 
+    @extend  %dmsans-700; 
+    font-size: 48px; 
+    color: $main-title-link; 
+    margin-bottom: 18px;
+  } 
+   
+  &__subtitle{ 
+    font-size: 16px; 
+    color: $main-title-link; 
+    max-width: 550px; 
+    color: $main-text-color; 
+    margin: 0 auto 47px; 
+  } 
+    
+  &__items{ 
+    text-align: left; 
+    display: flex; 
+    justify-content: space-evenly; 
+    margin:0 auto 127px; 
+    border: 1px solid transparent; 
+  }
+
+  &__item{ 
+    height: 502px;  
+    width: 100%;  
+    max-width: 368px;  
+    border-radius: 7px; 
+    box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.08);
+    border: 1px solid transparent; 
+  }   
+   
+  &__img{ 
+    margin-bottom: 17px;
+  } 
+   
+  &__course-wrapper{ 
+    padding: 17px 32px 36px;
+  }
+   
+  &__name{ 
+   @extend %dmsans-700; 
+   font-size: 25px;   
+   margin-bottom: 9px;
+   color: $main-title-link;
+  } 
+   
+  &__position{ 
+    font-size: 16px; 
+    margin-bottom: 25px;
+  } 
+   
+  &__course-block{ 
+    display: flex; 
+    justify-content: space-between;
+  } 
+   
+  &__courses-user-rating{  
+    width: 100%;
+    max-width: 107px; 
+    display: flex; 
+    justify-content: space-between; 
+    border: 1px solid transparent; 
+    padding-left: 22px; 
+    position: relative;
+  } 
+   
+ 
+   &__courses-rating::before{  
+    // display: inline-block;
+     content: ''; 
+     width: 17px; 
+     height: 17px;  
+     border: 1px solid transparent;  
+     background-image: url('../images/mentors/mentor-rating.svg');
+     position: absolute;  
+     top: 3px; 
+     right: 25px; 
+   }  
+    
+   &__courses-user::before{   
+    content: ''; 
+     width: 17px; 
+     height: 17px;   
+     background-image: url('../images/mentors/mentor-user.svg'); 
+     background-repeat: no-repeat;
+     border: 1px solid transparent;
+     position: absolute;  
+     top: 3px; 
+     left: 2px; 
+   } 
+    
+
+}
 
  
   
