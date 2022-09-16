@@ -784,8 +784,117 @@
     }
   }
 
-}
+} 
  
+
+.reviews{  
+  &__inner{ 
+    text-align: center;
+  } 
+   
+  &__title{ 
+    @extend %dmsans-700; 
+    font-size: 48px; 
+    color: $main-title-link; 
+    margin-bottom: 18px;
+  } 
+   
+  &__subtitle{ 
+    font-size: 16px; 
+    max-width: 491px; 
+    margin: 0 auto 42px;  
+    display: inline-block;
+  } 
+    
+  &__slider-wrapper{ 
+    text-align: left; 
+    width: 100%; 
+    max-width: 1010px;  
+    border: 1px solid transparent;
+    margin: 0 auto 127px;
+  }  
+   
+  &__slider{ 
+    .slick-arrow{ 
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      border:none;
+      border-radius:50%;
+      width: 40px;
+      height: 40px;
+      background-color: $main-blue-color;
+      cursor:pointer;
+      position:absolute;
+      top:50%;
+      transform: translateY(-50%);
+      z-index: 5; 
+  }
+  
+  .slick-prev{
+      left:-47px;
+  }
+  
+  .slick-next{
+      right:-47px;
+  } 
+}
+
+
+  &__slider-item{ 
+    width: 100%; 
+    max-width: 320px;  
+    padding: 30px 24px;
+    border: 1px solid transparent;  
+    border-radius: 7px;
+    margin: 0 14px;  
+    box-shadow: 0px 13px 45px rgba(0, 0, 0, 0.08);  
+
+  } 
+   
+  &__slider-item-text{ 
+    margin-bottom: 20px;
+  } 
+   
+  &__student-block{ 
+    padding-left: 90px;
+  } 
+   
+  &__student-name{ 
+    @extend %dmsans-500; 
+    font-size: 20px; 
+    color: $main-title-link; 
+    position: relative; 
+    &::before{  
+      content: ''; 
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      background-position: center;
+      width: 73px; 
+      height: 73px; 
+      position: absolute;
+      left: -87px;
+      top: -5px;
+    }  
+
+  }    
+   
+  &__student-name--first::before{ 
+    background-image: url('../images/reviews-slider/student1.png');  
+  } 
+   
+  &__student-name--second::before{  
+    background-image: url('../images/reviews-slider/student2.png'); 
+  } 
+   
+  &__student-name--third::before{ 
+    background-image: url('../images/reviews-slider/student3.png'); 
+  }
+   
+  &__student-position{ 
+    font-size: 14px;
+  }
+}
 
 @import 'media'; 
  
