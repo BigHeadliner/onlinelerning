@@ -960,6 +960,125 @@
     }
   }
 
+} 
+ 
+.footer{ 
+  background-color: #D3E5FE; 
+  &__inner{ 
+    padding: 65px 75px; 
+    display: flex; 
+    justify-content: space-between;
+  }  
+
+  &__item-title{ 
+    @extend %dmsans-700; 
+    font-size: 30px; 
+    color: $main-title-link; 
+    margin-bottom: 25px;
+  } 
+   
+  &__item-menu-option{  
+    margin-bottom: 16px; 
+    position: relative; 
+    padding-left: 25px;
+  }  
+   
+  &__item-menu-contact-option{   
+     margin-bottom: 16px; 
+     position: relative; 
+     padding-left: 35px;
+  }
+   
+  &__item-menu-link{
+   @extend %dmsans-400; 
+   font-size: 16px; 
+   color: $main-title-link; 
+   &::before{  
+    content: "";
+    width: 10px; 
+    height: 15px;
+    background-image: url('../images/footer/arrow-decor.svg');   
+    background-repeat: no-repeat;
+    background-size:cover; 
+    background-position: center;
+    position: absolute; 
+    top: 5px; 
+    left:5px;
+   }
+  }  
+
+  &__item-menu-contact-tel, 
+  &__item-menu-contact-email, 
+  &__item-menu-contact-web{
+    @extend %dmsans-400; 
+    font-size: 16px; 
+    color: $main-title-link; 
+    &::before{  
+     content: "";
+     width: 23px; 
+     height: 23px;
+     background-repeat: no-repeat;
+     background-size:cover; 
+     background-position: center;
+     position: absolute; 
+     top: 2px; 
+     left:5px;
+    }
+   } 
+    
+   &__item-menu-contact-tel::before{   
+    background-image: url('../images/footer/contacts/tel.svg');   
+   }  
+    
+   &__item-menu-contact-email::before{   
+    background-image: url('../images/footer/contacts/email.svg');   
+   }  
+    
+   &__item-menu-contact-web::before{   
+    background-image: url('../images/footer/contacts/web.svg');   
+   } 
+    
+  &__item-education{ 
+    max-width: 370px; 
+    border: 1px solid transparent; 
+  }  
+
+  &__item-links,  
+  &__item-support, 
+  &__item-contact{ 
+    max-width: 214px;  
+    border: 1px solid transparent; 
+  }
+
+
+  &__item-education-text{ 
+    max-width: 360px; 
+    color:$main-title-link; 
+    margin-bottom: 32px;
+  }  
+   
+  &__item-contact-adress{ 
+    font-size: 17px; 
+    margin-bottom: 16px;
+  }
+
+  &__item-education-social{ 
+     width: 100%;  
+     max-width: 240px; 
+     border: 1px solid transparent; 
+     display: flex; 
+     justify-content: space-between;
+  } 
+   
+  &__item-education-icon{ 
+    height: 48px; 
+    width: 48px; 
+    border-radius: 4px; 
+    background-color: $white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
 }
 
 @import 'media'; 
