@@ -39,8 +39,9 @@
                     color: $main-blue-color;
                     border-bottom: 1px solid $main-blue-color;
                 }
-            }
-
+            }  
+             
+          
         }
 
 
@@ -68,7 +69,56 @@
                background-color: $white;
                }  
 
+            } 
+             
+             
+            &__btn {
+              position: relative;
+              width: 50px;
+              height: 40px;
+              border: none;
+              padding: 0;
+              background-color: transparent;
+              transition: all 0.25s;
+              display: none;
+      
+              .row-top,
+              .row-middle,
+              .row-bottom {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 45px;
+                  height: 3px;
+                  background: $main-blue-color;
+                  transform: rotate(0);
+                  transition: all 0.5s;
+              }
+      
+              .row-middle {
+                  transform: translateY(16px);
+              }
+      
+              .row-bottom {
+                  transform: translateY(33px);
+              }
+      
+          }  
+           
+          &__btn--open { 
+
+            .row-top {
+              transform: rotate(45deg) translateY(10px) translateX(13px);
             }
+      
+            .row-middle {
+                display: none;
+            }
+               
+            .row-bottom {
+                 transform: rotate(-45deg) translateY(13px) translateX(-10px); 
+            }
+        }
 
         }
 
