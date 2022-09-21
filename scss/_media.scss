@@ -43,7 +43,22 @@
    .video__title {
     font-size: 45px;
     line-height: 50px; 
- }
+ } 
+  
+  // ---- courses ----//    
+   
+  .courses__options {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 27px;
+    margin: 0 auto 70px;   
+    max-width: 800px;
+
+  .courses__option{ 
+    margin: 0 auto;
+  }
+} 
 
 }
  
@@ -62,7 +77,8 @@
      .how-it-work__items{ 
         display: flex; 
         flex-wrap:wrap; 
-        justify-content: space-evenly;  
+        justify-content: space-evenly; 
+        margin-bottom: 70px;
 
      .how-it-work__item{ 
          margin: 34px;  
@@ -258,6 +274,17 @@
     .video__bigger-text { 
        margin-bottom: 33px; 
     }
+ 
+     // ---- courses ----//     
+       
+     .courses__options {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 35px;
+        margin: 0 auto 70px;
+    }   
+    
 
 }
 
@@ -304,6 +331,8 @@
             left: 8px;
         }
     }
+ 
+     
 
 } 
  
@@ -358,6 +387,14 @@
         margin-bottom: 15px;
        } 
 
+    } 
+      
+    //----  courses ----// 
+
+    .courses__title {
+        margin: 45px 0 29px;
+        font-size: 40px;
+        color: #222;
     }
 }
  
@@ -402,7 +439,13 @@
         margin-top: 25px;
     } 
 
-   } 
+   }  
+     
+ //----    courses ----//
+
+   .courses__title {
+    line-height: 39px;
+}
 
 } 
  
@@ -486,10 +529,23 @@
  
  .video__title{ 
     margin-bottom: 15px;
- }
-
-} 
+ } 
+   
+//----  courses  ----// 
  
+
+    .courses__option {
+        width: 318px;
+
+        .courses__option-title {
+            font-size: 20px;
+        }
+
+    }
+
+
+ 
+}
  
 @media(max-width: 333px) {     
  
@@ -524,5 +580,14 @@
     .video .video__video-content{ 
         height: 270px;
     } 
-
+ 
+    //----  courses  ----// 
+  
+       .courses__options {
+         margin: 0 auto 50px;
+    
+         .courses__option {
+             width: 300px;
+         }
+   }
 }
