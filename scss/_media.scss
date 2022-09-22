@@ -127,6 +127,12 @@
 
       } 
 
+    } 
+      
+    //----  event ----//
+
+    .event__items {
+        margin: 0 auto 95px;
     }
 
 } 
@@ -225,7 +231,13 @@
      
     .video__bigger-text {
         font-size: 15px; 
-    }
+    } 
+     
+    // ---- numbres ----//     
+
+    .numbers__inner {
+        padding: 72px 76px;
+    } 
 
 }
 
@@ -240,6 +252,17 @@
 
     .header-main__btn {
         margin-bottom: 230px;
+    }
+  
+    // ---- numbers ----//     
+
+    .numbers__inner{ 
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
+      .numbers__item{ 
+        margin: 50px;
+      }  
+
     }
 
 }
@@ -264,7 +287,14 @@
 
     .header-main__text {
         max-width: 777px;
+    } 
+     
+    //---- numbers ----// 
+     
+    .numbers__inner {
+        padding: 40px 87px;
     }
+
 
 }
 
@@ -489,6 +519,12 @@
 
    .courses__title {
     line-height: 39px;
+} 
+   
+  //---- numbers ----//
+
+.numbers__inner .numbers__item {
+    margin: 40px;
 }
 
 } 
