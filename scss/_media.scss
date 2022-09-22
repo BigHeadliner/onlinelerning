@@ -80,6 +80,13 @@
 
     .blog__inner {
         padding-top: 95px;
+    }  
+     
+     // ---- footer -----//
+     
+    .footer__inner {
+        padding: 65px 35px;  
+        justify-content: space-evenly;
     }
 
 }
@@ -108,6 +115,19 @@
         .blog__item {
             margin: 19px;
         }
+    } 
+      
+     //---- footer -----//    
+
+    .footer__inner {
+        padding: 65px 35px;
+        flex-wrap: wrap; 
+        .footer__item-education, 
+        .footer__item-links, 
+        .footer__item-support, 
+        .footer__item-contact{ 
+            margin: 40px;
+        }
     }
 
 }
@@ -128,6 +148,14 @@
 
     .reviews__slider .slick-next {
         right: -57px;
+    } 
+     
+     //----  footer ----//  
+
+    .footer__item-links, .footer__item-support, .footer__item-contact {
+        max-width: 214px;
+        width: 100%;  
+        border: 1px solid transparent;
     }
 }
 
@@ -139,11 +167,7 @@
     .blog__btn {
         margin: 0 auto 75px;
     }
-}
 
-
-
-@media(max-width: 1100px) {
 
     // ---- video ----//      
 
@@ -290,6 +314,16 @@
         padding: 72px 76px;
     }
 
+} 
+ 
+@media(max-width: 948px) { 
+  
+    // ---- email ----//   
+
+  .reviews-feedback__inner {
+     margin: 0 auto 57px; 
+     }   
+
 }
 
 
@@ -409,6 +443,11 @@
         margin: 0 auto 70px;
     }
 
+    // ---- footer ----//   
+
+    .footer__inner {
+        padding: 35px;  
+    }
 
 }
 
@@ -545,7 +584,21 @@
     }
 
 
-}
+} 
+ 
+@media(max-width: 678px) {  
+     
+     //----  footer ----//     
+
+     .footer__inner .footer__item-education,  
+     .footer__inner .footer__item-links,  
+     .footer__inner .footer__item-support,  
+     .footer__inner .footer__item-contact {
+        margin: 30px 40px;  
+    }
+ 
+} 
+
 
 @media(max-width: 555px) {
 
@@ -822,7 +875,13 @@
           max-width: 130px;
         } 
     }
-
+  
+     
+   // ---- footer ----//   
+     
+    .footer__inner {
+       padding: 25px 0;
+    }
    
 
 }
@@ -920,7 +979,17 @@
     .reviews-feedback__inner .reviews-feedback__input {
         height: 57px;
     }
-    
+     
+     //----  footer -----//     
+
+    .footer__inner .footer__item-education,  
+    .footer__inner .footer__item-links,  
+    .footer__inner .footer__item-support,  
+    .footer__inner .footer__item-contact { 
+
+        margin: 30px 15px;  
+    }
+
 
 }
 
@@ -1049,7 +1118,7 @@
 
     } 
       
-    
+
     //---- email ----//
    
     .reviews-feedback__inner {
