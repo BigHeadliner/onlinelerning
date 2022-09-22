@@ -32,158 +32,161 @@
     .header .header-top .header-top__inner .user-nav {
         margin-left: 0;
     }
- 
-     // ---- video ----//   
-       
-   .video__text-content{ 
-    padding-right: 10px;
-   }    
 
-    
-   .video__title {
-    font-size: 45px;
-    line-height: 50px; 
- } 
-  
-  // ---- courses ----//    
-   
-  .courses__options {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 3px;
-    grid-row-gap: 27px;
-    margin: 0 auto 70px;   
-    max-width: 800px;
+    // ---- video ----//   
 
-  .courses__option{ 
-    margin: 0 auto;
-  }
-}  
-  
-//----  mentor ----// 
-
-.mentor__inner {
-    padding-top: 70px;  
-
- .mentor__items{ 
-    flex-wrap: wrap;  
-    margin: 0 auto 95px;
-    .mentor__item{ 
-        margin: 15px;
-    }
-  }
-
- } 
-  
-// ---- blog -----//
-
-  .blog__inner {
-     padding-top: 95px;
-  }
-
-} 
-  
-  
-@media(max-width: 1170px) {    
-  
-//---- event ----//
-
-.event__items{ 
-    flex-wrap: wrap;  
-    .event__item{ 
-        margin: 15px;
+    .video__text-content {
+        padding-right: 10px;
     }
 
-} 
-  
 
-//---- blog -----//   
+    .video__title {
+        font-size: 45px;
+        line-height: 50px;
+    }
 
-.blog__items{  
-  flex-wrap: wrap; 
-  justify-content: space-evenly; 
-  .blog__item{ 
-     margin: 19px;
-   }
- }
+    // ---- courses ----//    
 
-} 
- 
-@media(max-width: 1120px) {       
- 
+    .courses__options {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 3px;
+        grid-row-gap: 27px;
+        margin: 0 auto 70px;
+        max-width: 800px;
+
+        .courses__option {
+            margin: 0 auto;
+        }
+    }
+
+    //----  mentor ----// 
+
+    .mentor__inner {
+        padding-top: 70px;
+
+        .mentor__items {
+            flex-wrap: wrap;
+            margin: 0 auto 95px;
+
+            .mentor__item {
+                margin: 15px;
+            }
+        }
+
+    }
+
+    // ---- blog -----//
+
+    .blog__inner {
+        padding-top: 95px;
+    }
+
+}
+
+
+@media(max-width: 1170px) {
+
+    //---- event ----//
+
+    .event__items {
+        flex-wrap: wrap;
+
+        .event__item {
+            margin: 15px;
+        }
+
+    }
+
+
+    //---- blog -----//   
+
+    .blog__items {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .blog__item {
+            margin: 19px;
+        }
+    }
+
+}
+
+@media(max-width: 1120px) {
+
     //----  reviews ----//
 
     .reviews__slider-wrapper {
-      
+
         max-width: 350px;
 
-    }  
+    }
 
     .reviews__slider .slick-prev {
         left: -57px;
-    } 
-     
+    }
+
     .reviews__slider .slick-next {
         right: -57px;
     }
-} 
+}
 
- 
-@media(max-width: 1100px) {     
-     
+
+@media(max-width: 1100px) {
+
     //---- blog -----//    
 
     .blog__btn {
         margin: 0 auto 75px;
     }
-} 
- 
+}
 
- 
-@media(max-width: 1100px) {   
+
+
+@media(max-width: 1100px) {
 
     // ---- video ----//      
 
     .video {
         margin-bottom: 100px;
-    } 
-     
-     
+    }
 
-  // ----  how-it-work  ----//     
 
-     .how-it-work__items{ 
-        display: flex; 
-        flex-wrap:wrap; 
-        justify-content: space-evenly; 
+
+    // ----  how-it-work  ----//     
+
+    .how-it-work__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         margin-bottom: 70px;
 
-     .how-it-work__item{ 
-         margin: 34px;  
-         padding: 10px;
-         border: 3px solid $main-blue-color; 
-         height: 235px;  
+        .how-it-work__item {
+            margin: 34px;
+            padding: 10px;
+            border: 3px solid $main-blue-color;
+            height: 235px;
 
-     .how-it-work__item-img { 
-            margin: 0 auto 15px;
-        }    
-         
-     .how-it-work__item-title {  
-        font-size: 20px;
-        margin-bottom: 5px;
-     }  
+            .how-it-work__item-img {
+                margin: 0 auto 15px;
+            }
 
-      } 
+            .how-it-work__item-title {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
 
-    } 
-      
+        }
+
+    }
+
     //----  event ----//
 
     .event__items {
         margin: 0 auto 95px;
     }
 
-} 
+}
 
 
 @media(max-width: 1035px) {
@@ -245,12 +248,12 @@
     .header .header-top .header-top__inner .user-nav__link+.user-nav__link {
         margin-left: 0;
     }
- 
-      // ---- how-it-work ----//       
+
+    // ---- how-it-work ----//       
 
     .how-it-work__subtitle {
         margin: 0 auto 30px;
-    } 
+    }
 
 }
 
@@ -264,28 +267,28 @@
 
     .header-main__numbers {
         padding: 56px 25px;
-    } 
-     
+    }
+
     // ---- video ----//       
-     
+
     .video__title {
         font-size: 35px;
         line-height: 45px;
-    }   
-      
+    }
+
     .video__text {
-        font-size: 15px; 
-    }  
-     
+        font-size: 15px;
+    }
+
     .video__bigger-text {
-        font-size: 15px; 
-    } 
-     
+        font-size: 15px;
+    }
+
     // ---- numbres ----//     
 
     .numbers__inner {
         padding: 72px 76px;
-    } 
+    }
 
 }
 
@@ -301,15 +304,16 @@
     .header-main__btn {
         margin-bottom: 230px;
     }
-  
+
     // ---- numbers ----//     
 
-    .numbers__inner{ 
+    .numbers__inner {
+
         // flex-wrap: wrap;  
         // justify-content: space-evenly;
-      .numbers__item{ 
-        margin: 50px;
-      }  
+        .numbers__item {
+            margin: 50px;
+        }
 
     }
 
@@ -335,23 +339,25 @@
 
     .header-main__text {
         max-width: 777px;
-    } 
-     
+    }
+
     //---- numbers ----// 
-     
+
     .numbers__inner {
-        padding: 50px 87px; 
-        display: grid; 
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(2, 1fr); 
-         
-        .numbers__item-title::after, .numbers__item-title1::after,  
-        .numbers__item-title2::after, .numbers__item-title3::after {
-           display: none;
-        } 
-    } 
-     
- 
+        padding: 50px 87px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        .numbers__item-title::after,
+        .numbers__item-title1::after,
+        .numbers__item-title2::after,
+        .numbers__item-title3::after {
+            display: none;
+        }
+    }
+
+
 
 
 }
@@ -380,29 +386,29 @@
         left: auto;
         right: auto;
     }
-  
+
     // ---- video ----//       
-     
+
     .video__title {
         font-size: 30px;
         line-height: 37px;
         margin-top: 10px;
-    }  
-     
-    .video__bigger-text { 
-       margin-bottom: 33px; 
     }
- 
-     // ---- courses ----//     
-       
-     .courses__options {
+
+    .video__bigger-text {
+        margin-bottom: 33px;
+    }
+
+    // ---- courses ----//     
+
+    .courses__options {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0;
         grid-row-gap: 35px;
         margin: 0 auto 70px;
-    }   
-    
+    }
+
 
 }
 
@@ -449,11 +455,11 @@
             left: 8px;
         }
     }
- 
-     
 
-} 
- 
+
+
+}
+
 @media(max-width: 750px) {
 
     // ---- header ----//       
@@ -493,319 +499,370 @@
 
         .video__title {
             margin-top: 15px;
-        }  
+        }
 
-        .video__text, 
-        .video__bigger-text {   
-         max-width: 100%;   
-        } 
+        .video__text,
+        .video__bigger-text {
+            max-width: 100%;
+        }
 
-       .video__btn{ 
-        display: inline-block; 
-        margin-bottom: 15px;
-       } 
+        .video__btn {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
 
-    } 
-      
+    }
+
     //----  courses ----// 
 
     .courses__title {
         margin: 45px 0 29px;
         font-size: 40px;
         color: #222;
-    } 
-      
+    }
 
-   //----  mentor ----//   
-    
-   .mentor__title {
-    font-size: 43px;
-    margin-bottom: 29px;
-   }  
-    
-   .mentor__subtitle {
-    font-size: 15px;
-    margin: 0 auto 35px;
-   }  
-    
-     
-   //----  reviews ----//    
 
-   .reviews__title {
-    font-size: 43px;
-    line-height: 43px;
-    color: #222;
-    margin-bottom: 18px;
-  } 
+    //----  mentor ----//   
+
+    .mentor__title {
+        font-size: 43px;
+        margin-bottom: 29px;
+    }
+
+    .mentor__subtitle {
+        font-size: 15px;
+        margin: 0 auto 35px;
+    }
+
+
+    //----  reviews ----//    
+
+    .reviews__title {
+        font-size: 43px;
+        line-height: 43px;
+        color: #222;
+        margin-bottom: 18px;
+    }
 
 
 }
- 
-@media(max-width: 555px) {    
-     
+
+@media(max-width: 555px) {
+
     // ---- header ----//       
-     
+
     .header-main {
-        margin-bottom: 0px; 
+        margin-bottom: 0px;
     }
-     
-    .header .header-top .header-top__inner { 
+
+    .header .header-top .header-top__inner {
         padding: 25px 0;
     }
-     
+
     .header-main__title {
-        font-size: 45px;  
+        font-size: 45px;
         line-height: 47px;
-    }  
+    }
+
     .header-main__text {
         margin-bottom: 47px;
     }
-     
+
     .header-main__btn {
         margin-bottom: 130px;
-     }
+    }
 
-  .header-main__numbers{  
-    display:none;
-   }
-   
+    .header-main__numbers {
+        display: none;
+    }
+
     // ---- video ----//        
 
-   .video {
-    padding-top: 10px;  
+    .video {
+        padding-top: 10px;
 
-   .video__video-content{ 
-     height: 350px;
-    } 
-     
-    .video__title{ 
-        margin-top: 25px;
-    } 
+        .video__video-content {
+            height: 350px;
+        }
 
-   }  
-     
- //----    courses ----//
+        .video__title {
+            margin-top: 25px;
+        }
 
-   .courses__title {
-    line-height: 39px;
-} 
-   
-  //---- numbers ----//
-
-.numbers__inner .numbers__item {
-    margin: 40px;
-} 
-  
-//---- blog ----//  
-
-.blog__inner {
-    padding-top: 70px; 
-     
-    .blog__title { 
-        font-size: 43px;
-        line-height: 45px; 
     }
 
-    .blog__subtitle {
+    //----    courses ----//
+
+    .courses__title {
+        line-height: 39px;
+    }
+
+    //---- numbers ----//
+
+    .numbers__inner .numbers__item {
+        margin: 40px;
+    }
+
+    //---- blog ----//  
+
+    .blog__inner {
+        padding-top: 70px;
+
+        .blog__title {
+            font-size: 43px;
+            line-height: 45px;
+        }
+
+        .blog__subtitle {
+            margin: 0 auto 37px;
+        }
+
+        .blog__btn {
+            margin: 0 auto 57px;
+        }
+
+    }
+
+    //---- reviews ----//   
+
+    .reviews__title {
+        font-size: 38px;
+    }
+
+    .reviews__subtitle {
+
         margin: 0 auto 37px;
-    } 
-     
-    .blog__btn {
-        margin: 0 auto 57px;
     }
 
-} 
+
+    //---- numbers ----// 
+
+    .numbers__inner {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
   
-//---- reviews ----//   
+     //---- email ----//  
 
-.reviews__title {
-    font-size: 38px;
-}  
+    .reviews-feedback__title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }      
 
-.reviews__subtitle { 
-
-  margin: 0 auto 37px;
-  }   
-   
-   
-   //---- numbers ----// 
      
-   .numbers__inner {
-    padding: 50px 87px; 
-    display: grid; 
-    grid-template-columns: repeat(1, 1fr); 
-    grid-template-rows: repeat(1, 1fr);  
-} 
+    .reviews-feedback__subtitle {
+        font-size: 15px;
+        margin: 0 auto 35px; 
+    }
+      
 
-} 
- 
- 
-@media(max-width:525px) {   
-     
+}
+
+
+@media(max-width:525px) {
+
     //----  blog  ----//   
 
     .blog__inner .blog__btn {
         margin: 0 auto 50px;
-    } 
+    }
 
 
-    //----  reviews ----//  
-
-    .slick-dots {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: -43px; 
-        border: 1px solid transparent;
-      }
-      
-      .slick-dots li+li {
-        margin-left: 15px;
-      }
-      
-      .slick-dots .slick-active button {
-        background: $main-blue-color;
-      }
-      
-      .slick-dots button {
-        width: 15px;
-        height: 15px;
-        background: $main-text-color;
-        font-size: 0;
-        border-radius: 50%;
-        border: none; 
-        cursor: pointer;
-      }
-} 
-
- 
-@media(max-width: 490px) {   
+    //----  reviews ----//   
      
-   // ---- header ----//         
-    
-   .header .header-top .header-top__inner .user-nav { 
-    justify-content: space-evenly;
-   }
-    
-   .header .header-top__logo {
-    font-size: 17px; 
-  }  
-   
-  .header .header-top .header-top__inner .user-nav__link {
-    padding: 10px 15px; 
- } 
- 
-.header .header-top .header-top__inner .user-nav__btn {
-    position: relative;
-    width: 35px;
-    height: 40px; 
-} 
- 
-.header .header-top .header-top__inner .user-nav__btn  
-.row-top, .header .header-top .header-top__inner .user-nav__btn .row-middle,  
-.header .header-top .header-top__inner .user-nav__btn .row-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 35px;
-    height: 3px; 
- }
-   
-  .header-main__title {
-    font-size: 37px
- }
-   
-   .header-main__btn {
-    margin-bottom: 100px;
-  } 
-  
-  // ---- video ----//      
-
-  .video__bigger-text {
-    margin-bottom: 17px;
- } 
-  
-  // ---- mentor ----//     
-
- .mentor__inner {
-    padding-top: 53px;
-} 
- 
- .mentor__title {
-     font-size: 38px;
-     line-height: 39px;
-     margin-bottom: 23px;
- }  
- 
- .mentor__subtitle {
-     margin: 0 auto 27px;
-  } 
- 
-
- .mentor__inner .mentor__items {
-    margin: 0 auto 70px; 
-  }    
-   
-  //----  event  ----// 
-
-.event__title {
-    font-size: 43px;
-    line-height: 45px; 
-  } 
-   
-  .event__subtitle {
-    margin: 0 auto 39px;
- }
-   
-  //---- reviews -----//   
-   
-  .reviews__title {
-    font-size: 34px;
-   }
-
   .reviews__slider-wrapper {
-     border: 3px solid $main-blue-color; 
-   } 
- 
+        margin: 0 auto 107px;   
+         
+        .slick-dots {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -47px;
+            border: 1px solid transparent;
+        }
+    
+        .slick-dots li+li {
+            margin-left: 15px;
+        }
+    
+        .slick-dots .slick-active button {
+            background: $main-blue-color;
+        }
+    
+        .slick-dots button {
+            width: 15px;
+            height: 15px;
+            background: $main-text-color;
+            font-size: 0;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        } 
+
+    }  
+
 }
- 
-@media(max-width: 420px) {    
- 
-    // ---- header ----//        
+
+
+@media(max-width: 490px) {
+
+    // ---- header ----//         
+
+    .header .header-top .header-top__inner .user-nav {
+        justify-content: space-evenly;
+    }
+
+    .header .header-top__logo {
+        font-size: 17px;
+    }
+
+    .header .header-top .header-top__inner .user-nav__link {
+        padding: 10px 15px;
+    }
+
+    .header .header-top .header-top__inner .user-nav__btn {
+        position: relative;
+        width: 35px;
+        height: 40px;
+    }
+
+    .header .header-top .header-top__inner .user-nav__btn .row-top,
+    .header .header-top .header-top__inner .user-nav__btn .row-middle,
+    .header .header-top .header-top__inner .user-nav__btn .row-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35px;
+        height: 3px;
+    }
+
+    .header-main__title {
+        font-size: 37px
+    }
+
+    .header-main__btn {
+        margin-bottom: 100px;
+    }
+
+    // ---- video ----//      
+
+    .video__bigger-text {
+        margin-bottom: 17px;
+    }
+
+    // ---- mentor ----//     
+
+    .mentor__inner {
+        padding-top: 53px;
+    }
+
+    .mentor__title {
+        font-size: 38px;
+        line-height: 39px;
+        margin-bottom: 23px;
+    }
+
+    .mentor__subtitle {
+        margin: 0 auto 27px;
+    }
+
+
+    .mentor__inner .mentor__items {
+        margin: 0 auto 70px;
+    }
+
+    //----  event  ----// 
+
+    .event__title {
+        font-size: 43px;
+        line-height: 45px;
+    }
+
+    .event__subtitle {
+        margin: 0 auto 39px;
+    }
+
+    //---- reviews -----//   
+
+    .reviews__title {
+        font-size: 34px;
+    }
+
+    .reviews__slider-wrapper {
+        border: 3px solid $main-blue-color; 
+        margin: 0 auto 95px;
+    }
+  
+    //----  email ----// 
      
+    .reviews-feedback__inner{  
+        padding: 37px 10px 10px 10px;    
+         
+        .reviews-feedback__title {
+           line-height: 35px;
+        }
+         
+        .reviews-feedback__subtitle {
+            margin: 0 auto 30px;
+        }
+
+      .reviews-feedback__input{ 
+         padding: 15px; 
+         height: 63px;
+      } 
+
+      .reviews-feedback__btn { 
+          position: absolute;
+          top: 75px;   
+          left: 3px;
+          border: 1px solid $white; 
+          max-width: 130px;
+        } 
+    }
+
+   
+
+}
+
+@media(max-width: 420px) {
+
+    // ---- header ----//        
+
     .header .header-top .header-top__inner .user-nav {
         justify-content: space-around;
-    }  
-     
-  .header .header-top .header-top__inner .user-nav__link {
-      padding: 10px 10px; 
-   } 
-   
-   .header-main__title {
-      margin: 65px 0 25px;  
-   }   
-    
-   .header-main__text {
-    margin-bottom: 57px;
-  }
- 
-  .header-main__btn {
-    margin-bottom: 80px;
-}  
- 
-  // ---- video ----//      
- 
-.video .video__video-content {
-    height: 315px; 
- } 
- 
- .video__title{ 
-    margin-bottom: 15px;
- } 
-   
-//----  courses  ----// 
- 
+    }
+
+    .header .header-top .header-top__inner .user-nav__link {
+        padding: 10px 10px;
+    }
+
+    .header-main__title {
+        margin: 65px 0 25px;
+    }
+
+    .header-main__text {
+        margin-bottom: 57px;
+    }
+
+    .header-main__btn {
+        margin-bottom: 80px;
+    }
+
+    // ---- video ----//      
+
+    .video .video__video-content {
+        height: 315px;
+    }
+
+    .video__title {
+        margin-bottom: 15px;
+    }
+
+    //----  courses  ----// 
+
     .courses__option {
         width: 318px;
 
@@ -815,158 +872,188 @@
 
     }
 
-    .mentor__item { 
-        height: auto; 
-      .mentor__course-wrapper {
-         padding: 17px 25px 18px;
-      } 
-    }
- 
-    // ----- event -----//  
-     
-    .event__item-info-wrapper {
-        padding: 25px 14px 28px 14px; 
-        .event__item-time, 
-        .event__item-time-location{ 
-           font-size: 14px;
-        } 
+    .mentor__item {
+        height: auto;
+
+        .mentor__course-wrapper {
+            padding: 17px 25px 18px;
+        }
     }
 
-  
-     
+    // ----- event -----//  
+
+    .event__item-info-wrapper {
+        padding: 25px 14px 28px 14px;
+
+        .event__item-time,
+        .event__item-time-location {
+            font-size: 14px;
+        }
+    }
+
+
+
     .event__item-title {
-        font-size: 17px; 
-    } 
-     
-    //----    blog   -----// 
+        font-size: 17px;
+    }
+
+    //----  blog -----// 
 
     .blog__item-wrapper {
-        padding: 25px 20px 20px;    
+        padding: 25px 20px 20px;
 
         .blog__item-title {
-            margin-bottom: 14px; 
-        } 
-         
+            margin-bottom: 14px;
+        }
+
         .blog__item-text {
             margin-bottom: 14px;
         }
     } 
+      
+     //----  email -----//   
 
-} 
- 
+    .reviews-feedback__inner .reviews-feedback__subtitle {
+        margin: 0 auto 20px;
+    }
+     
+    .reviews-feedback__inner .reviews-feedback__input {
+        height: 57px;
+    }
+    
+
+}
+
 @media(max-width: 374px) {
-   
+
     //----  event ----// 
 
     .event__item-info-wrapper {
-        padding: 25px 11px 26px 11px; 
-    }  
-     
-.event__item-info-wrapper .event__item-time, .event__item-info-wrapper .event__item-time-location {
-        font-size: 12px;
-    } 
-     
-       //----    blog   -----// 
+        padding: 25px 11px 26px 11px;
+    }
 
-       .blog__item-wrapper { 
+    .event__item-info-wrapper .event__item-time,
+    .event__item-info-wrapper .event__item-time-location {
+        font-size: 12px;
+    }
+
+    //----    blog   -----// 
+
+    .blog__item-wrapper {
 
         padding: 15px 15px 20px;
-        
+
         .blog__item-title {
-            margin-bottom: 10px; 
-        } 
-         
+            margin-bottom: 10px;
+        }
+
         .blog__item-text {
             margin-bottom: 10px;
         }
-    }   
-
-     //----  reviews  -----// 
-  
-    .reviews__slider-item {
-        padding: 20px 14px; 
     }
-     
+
+    //----  reviews  -----// 
+
+    .reviews__slider-item {
+        padding: 20px 14px;
+    } 
+      
+     //----  email  -----// 
+
+    .reviews-feedback__inner .reviews-feedback__btn {
+        position: absolute;
+        top: 67px;
+        left: 3px;
+    }
+
 }
- 
-@media(max-width: 333px) {     
- 
-   // ---- header ----//        
-     
-   .header .header-top .header-top__inner .user-nav {
-      justify-content: space-between;
-    }    
-     
+
+@media(max-width: 333px) {
+
+    // ---- header ----//        
+
+    .header .header-top .header-top__inner .user-nav {
+        justify-content: space-between;
+    }
+
     .header .header-top .header-top__inner .menu__list {
         position: absolute;
         top: 105px;
         left: 0;
         right: 0;
     }
- 
+
     .header-main__title {
-        margin: 45px 0 25px; 
+        margin: 45px 0 25px;
         font-size: 34px;
-    }  
-     
+    }
+
     .header-main__text {
         margin-bottom: 31px;
-    }   
+    }
 
     .header-main__btn {
         margin-bottom: 50px;
-    } 
-     
-     // ---- video ----//     
- 
-    .video .video__video-content{ 
+    }
+
+    // ---- video ----//     
+
+    .video .video__video-content {
         height: 270px;
-    } 
- 
+    }
+
     //----  courses  ----// 
-  
-       .courses__options {
-         margin: 0 auto 50px;
-    
-         .courses__option {
-             width: 300px;
-         }
-   } 
-     
-    
+
+    .courses__options {
+        margin: 0 auto 50px;
+
+        .courses__option {
+            width: 300px;
+        }
+    }
+
+
     //----  mentor  ----//  
 
-   .mentor__course-wrapper {
-    padding: 17px 17px 15px;
- } 
-   
-  
-   //----  event  ----//  
- 
- .event__item-info-wrapper {
-    padding: 23px 7px 23px 7px; 
-     
-    .event__item-time::before {
-        position: absolute;
-        top: 3px;
-        left: -21px;
-     }  
-     
-    .event__item-location::before {
-        position: absolute;
-        top: 3px;
-        left: -19px;
-     }
-  }   
-   
-  //---- blog ----//
-   
-  .blog__items {
-     margin: 0 auto 30px;  
-     .blog__item-wrapper {
-        padding: 10px 15px 10px;
-    } 
+    .mentor__course-wrapper {
+        padding: 17px 17px 15px;
+    }
 
-  }
+
+    //----  event  ----//  
+
+    .event__item-info-wrapper {
+        padding: 23px 7px 23px 7px;
+
+        .event__item-time::before {
+            position: absolute;
+            top: 3px;
+            left: -21px;
+        }
+
+        .event__item-location::before {
+            position: absolute;
+            top: 3px;
+            left: -19px;
+        }
+    }
+
+    //---- blog ----//
+
+    .blog__items {
+        margin: 0 auto 30px;
+
+        .blog__item-wrapper {
+            padding: 10px 15px 10px;
+        }
+
+    } 
+      
+    
+    //---- email ----//
+   
+    .reviews-feedback__inner {
+        padding: 27px 10px 10px 10px;
+    }
 
 }
