@@ -107,7 +107,36 @@
    }
  }
 
-}
+} 
+ 
+@media(max-width: 1120px) {       
+ 
+    //----  reviews ----//
+
+    .reviews__slider-wrapper {
+      
+        max-width: 350px;
+
+    }  
+
+    .reviews__slider .slick-prev {
+        left: -57px;
+    } 
+     
+    .reviews__slider .slick-next {
+        right: -57px;
+    }
+} 
+
+ 
+@media(max-width: 1100px) {     
+     
+    //---- blog -----//    
+
+    .blog__btn {
+        margin: 0 auto 75px;
+    }
+} 
  
 
  
@@ -276,8 +305,8 @@
     // ---- numbers ----//     
 
     .numbers__inner{ 
-        flex-wrap: wrap;  
-        justify-content: space-evenly;
+        // flex-wrap: wrap;  
+        // justify-content: space-evenly;
       .numbers__item{ 
         margin: 50px;
       }  
@@ -311,8 +340,18 @@
     //---- numbers ----// 
      
     .numbers__inner {
-        padding: 40px 87px;
-    }
+        padding: 50px 87px; 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+         
+        .numbers__item-title::after, .numbers__item-title1::after,  
+        .numbers__item-title2::after, .numbers__item-title3::after {
+           display: none;
+        } 
+    } 
+     
+ 
 
 
 }
@@ -487,7 +526,18 @@
    .mentor__subtitle {
     font-size: 15px;
     margin: 0 auto 35px;
-   } 
+   }  
+    
+     
+   //----  reviews ----//    
+
+   .reviews__title {
+    font-size: 43px;
+    line-height: 43px;
+    color: #222;
+    margin-bottom: 18px;
+  } 
+
 
 }
  
@@ -558,11 +608,77 @@
 
     .blog__subtitle {
         margin: 0 auto 37px;
+    } 
+     
+    .blog__btn {
+        margin: 0 auto 57px;
     }
 
-}
+} 
+  
+//---- reviews ----//   
+
+.reviews__title {
+    font-size: 38px;
+}  
+
+.reviews__subtitle { 
+
+  margin: 0 auto 37px;
+  }   
+   
+   
+   //---- numbers ----// 
+     
+   .numbers__inner {
+    padding: 50px 87px; 
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(1, 1fr);  
+} 
 
 } 
+ 
+ 
+@media(max-width:525px) {   
+     
+    //----  blog  ----//   
+
+    .blog__inner .blog__btn {
+        margin: 0 auto 50px;
+    } 
+
+
+    //----  reviews ----//  
+
+    .slick-dots {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -43px; 
+        border: 1px solid transparent;
+      }
+      
+      .slick-dots li+li {
+        margin-left: 15px;
+      }
+      
+      .slick-dots .slick-active button {
+        background: $main-blue-color;
+      }
+      
+      .slick-dots button {
+        width: 15px;
+        height: 15px;
+        background: $main-text-color;
+        font-size: 0;
+        border-radius: 50%;
+        border: none; 
+        cursor: pointer;
+      }
+} 
+
  
 @media(max-width: 490px) {   
      
@@ -616,18 +732,22 @@
     padding-top: 53px;
 } 
  
-.mentor__title {
-    font-size: 38px;
-    line-height: 39px;
-    margin-bottom: 23px;
-}  
+ .mentor__title {
+     font-size: 38px;
+     line-height: 39px;
+     margin-bottom: 23px;
+ }  
  
-.mentor__subtitle {
-    margin: 0 auto 27px;
-} 
+ .mentor__subtitle {
+     margin: 0 auto 27px;
+  } 
  
-  
-//----  event  ----// 
+
+ .mentor__inner .mentor__items {
+    margin: 0 auto 70px; 
+  }    
+   
+  //----  event  ----// 
 
 .event__title {
     font-size: 43px;
@@ -637,12 +757,16 @@
   .event__subtitle {
     margin: 0 auto 39px;
  }
- 
-//---- mentor -----// 
+   
+  //---- reviews -----//   
+   
+  .reviews__title {
+    font-size: 34px;
+   }
 
- .mentor__inner .mentor__items {
-    margin: 0 auto 70px; 
-  }   
+  .reviews__slider-wrapper {
+     border: 3px solid $main-blue-color; 
+   } 
  
 }
  
@@ -755,8 +879,13 @@
         .blog__item-text {
             margin-bottom: 10px;
         }
-    }  
- 
+    }   
+
+     //----  reviews  -----// 
+  
+    .reviews__slider-item {
+        padding: 20px 14px; 
+    }
      
 }
  
@@ -835,7 +964,7 @@
   .blog__items {
      margin: 0 auto 30px;  
      .blog__item-wrapper {
-        padding: 10px 15px 10px 
+        padding: 10px 15px 10px;
     } 
 
   }

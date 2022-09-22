@@ -23,12 +23,29 @@ $(function () {
      $('.reviews__slider').slick({ 
          prevArrow:'<button type="button" class="slick-prev"><img src="images/reviews-slider/arrow-left.svg" alt=""></button>', 
          nextArrow:'<button type="button" class="slick-next"><img src="images/reviews-slider/arrow-right.svg" alt=""></button>', 
-         
-
-      
-
          slidesToShow: 3,
-         slidesToScroll: 1, 
+         slidesToScroll: 1,    
+
+         responsive: [
+            {
+              breakpoint: 1121,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },  
+             
+            {
+                breakpoint: 525,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1, 
+                  arrows: false, 
+                  dots: true,
+                }
+              },
+          
+          ]
      }) 
 
   
