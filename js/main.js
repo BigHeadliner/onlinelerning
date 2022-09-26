@@ -24,7 +24,8 @@ $(function () {
          prevArrow:'<button type="button" class="slick-prev"><img src="images/reviews-slider/arrow-left.svg" alt=""></button>', 
          nextArrow:'<button type="button" class="slick-next"><img src="images/reviews-slider/arrow-right.svg" alt=""></button>', 
          slidesToShow: 3,
-         slidesToScroll: 1,    
+         slidesToScroll: 1,     
+         autoplay: true,
 
          responsive: [
             {
