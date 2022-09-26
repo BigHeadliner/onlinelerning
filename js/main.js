@@ -48,7 +48,9 @@ $(function () {
           ]
      }) 
 
-  
+     $('.reviews-feedback__btn').on('click', function(e){ 
+        e.preventDefault();
+      })   
 
  const counterUp = window.counterUp.default
 
