@@ -36,7 +36,7 @@
     // ---- video ----//   
 
     .video__text-content {
-        padding-right: 10px;
+        padding-right: 10px; 
     }
 
 
@@ -156,7 +156,10 @@
         max-width: 214px;
         width: 100%;  
         border: 1px solid transparent;
-    }
+    } 
+     
+   
+
 }
 
 
@@ -517,6 +520,10 @@
     .header-main__title {
         margin: 95px 0 25px;
         line-height: 52px;
+    } 
+     
+    .header-main__text{ 
+        margin-bottom: 70px;
     }
 
     .header-main__numbers {
@@ -618,7 +625,7 @@
     }
 
     .header-main__text {
-        margin-bottom: 47px;
+        margin-bottom: 57px;
     }
 
     .header-main__btn {
@@ -756,6 +763,13 @@
         } 
 
     }  
+  
+      
+    //----  fancybox -----//
+
+    .fancybox-slide { 
+        padding: 10px;
+    } 
 
 }
 
@@ -903,7 +917,7 @@
     }
 
     .header-main__text {
-        margin-bottom: 57px;
+        margin-bottom: 65px;
     }
 
     .header-main__btn {
@@ -991,6 +1005,15 @@
     }
 
 
+} 
+ 
+@media(max-width: 382px) {   
+
+    //---- header ----// 
+
+    .header-main__text {
+        margin-bottom: 40px;
+    }
 }
 
 @media(max-width: 374px) {
@@ -1123,6 +1146,12 @@
    
     .reviews-feedback__inner {
         padding: 27px 10px 10px 10px;
-    }
+    } 
+     
+     //----  fancybox -----//
+
+     .fancybox-slide { 
+        padding: 1px;
+    } 
 
 }
