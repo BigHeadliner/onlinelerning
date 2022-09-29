@@ -47,13 +47,14 @@
 
         .user-nav {
             margin-left: 77px;
-
+            display: flex;
             &__link {
                 padding: 12px 23px;
                 color: $main-title-link;
                 border: 1px solid transparent;
                 border-radius: 4px;
-                font-size: 16px;
+                font-size: 16px; 
+                display:block;
             }
 
             &__link + .user-nav__link {
